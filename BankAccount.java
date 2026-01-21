@@ -2,7 +2,7 @@ abstract class BankAccount{
     // encapsulation
     private int accountNumber;
     private String name;
-    private double balance;
+    public double balance;
     public BankAccount(int accountNumber,String name){
         this.accountNumber=accountNumber;
         this.name=name;
