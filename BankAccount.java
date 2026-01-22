@@ -1,9 +1,9 @@
 abstract class BankAccount{
     // encapsulation
-    private int accountNumber;
+    private String accountNumber;
     private String name;
     public double balance;
-    public BankAccount(int accountNumber,String name){
+    BankAccount(String accountNumber,String name){
         this.accountNumber=accountNumber;
         this.name=name;
         this.balance=0.0;
@@ -11,13 +11,17 @@ abstract class BankAccount{
     public void deposit(double amount){
         if(amount>0){
             balance=balance+amount;
+        }else {
             System.out.println("Invalid amount");
         }
     }
     public double getBalance(){
         return balance;
     }
-    public int getAccountNumber(){
+    public String getName(){
+        return name;
+    }
+    public String getAccountNumber(){
         return accountNumber;
     }
     public abstract void withdraw(double amount);
