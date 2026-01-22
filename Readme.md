@@ -21,3 +21,11 @@ In this project user can create an account, deposit money,withdraw money and che
 3. Main.java
     a. Contains the main() method
     b. Uses switch–case for menu-driven operations
+
+## Separation of responsibilities
+
+1. BankAccount → business logic
+
+2. SavingsAccount → account-specific behavior
+
+3. Main → user interaction
