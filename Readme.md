@@ -1,26 +1,58 @@
 # Simple Banking System
-In this project user can create an account, deposit money,withdraw money and check balance
+A console-based Java application that demonstrates core Object-Oriented Programming (OOP) concepts through a simple banking system.
+
+## Features
+
+1. Create a bank account
+
+2. Deposit money
+
+3. Withdraw money
+
+4. View account information and balance
+
+5. Menu-driven console interface
 
 ## OOPs concepts
-1. Encapsulation : private variable like account number and holder name
-2. Abstraction : make BankAccount class as abstract class
-3. Inheritance : make a child class Saving Account
-4. Polymorphism : override withdraw() method
+
+1. **Encapsulation**  
+   - Private fields such as `accountNumber` and `name`
+   - Access through public getter methods
+
+2. **Abstraction**  
+   - `BankAccount` is an abstract class defining common behavior
+
+3. **Inheritance**  
+   - `SavingsAccount` extends `BankAccount`
+
+4. **Polymorphism**  
+   - `withdraw()` method is overridden in `SavingsAccount`
 
 ## Project Files and Their Purpose
-1. Project Files and Their Purpose:
-    a. Abstract base class
-    b. Contains common properties like balance and account detail
-    c. Demonstrates Encapsulation and Abstraction
 
-2. SavingsAccount.java
-    a. Child class of BankAccount
-    b. Implements the withdraw() method
-    c. Demonstrates Inheritance and Polymorphism
+### 1.  BankAccount.java
+- Abstract base class
+- Contains common account properties:
+  - Account number
+  - Account holder name
+  - Balance
+- Implements deposit logic
+- Declares abstract `withdraw()` method  
+- Demonstrates **Encapsulation** and **Abstraction**
 
-3. Main.java
-    a. Contains the main() method
-    b. Uses switch–case for menu-driven operations
+---
+
+### 2. SavingsAccount.java
+- Child class of `BankAccount`
+- Implements the `withdraw()` method with balance validation
+- Demonstrates **Inheritance** and **Polymorphism**
+
+---
+
+### 3.Main.java
+- Entry point of the application
+- Implements a menu-driven system using `switch-case`
+- Handles all user interaction
 
 ## Separation of responsibilities
 
